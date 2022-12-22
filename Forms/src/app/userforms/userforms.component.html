@@ -1,0 +1,49 @@
+<body>
+    <div >
+<form [formGroup]="userform" (ngSubmit)="onSubmit()">
+
+<div class="form" >
+    <label for="email"><b>User email: </b></label>
+    <input type="text" placeholder="email" formControlName="email" [pattern]="emailpattern" required>
+    <div *ngIf="userform.controls['email'].touched && userform.controls['email'].invalid">
+        <span *ngIf="userform.controls['email'].hasError('required')">email is required</span>
+        <span *ngIf="userform.controls['email'].hasError('pattern')">inavlid email</span>
+    </div>
+    <br>
+    <br>
+    
+    <label for="subcriptions"><b>Choose a Subcription:</b></label>
+    <select formControlName="subcriptions">
+      <option value="Basic" >Basic</option>
+      <option value="Advance">Advance</option>
+      <option value="Pro">Pro</option>
+      
+    </select>
+    <br>
+    <br>
+    <label for="Password"><b>Password: </b></label>
+    <input type="password" placeholder="Password" formControlName="password"  required>
+    <div *ngIf="userform.controls['password'].touched && userform.controls['password'].invalid">
+        <span *ngIf="userform.controls['password'].hasError('required')">Password is required</span>
+    </div>
+    <br>
+    <br>
+    <div>
+        <input type="submit" value="submit">
+    </div>
+</div>
+</form>
+    </div>
+    <table class="table table-bordered">
+        <tr>
+            <th><b>Email</b></th>
+            <th><b>Subcriptions</b></th>
+            <th><b>Password</b></th>
+        </tr>
+        <tr *ngFor="let u of user">
+            <td>{{u.email}}</td>
+            <td>{{u.subcriptions}}</td>
+            <td>{{u.password}}</td>
+
+        </tr>
+    </table>
