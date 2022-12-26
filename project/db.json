@@ -1,0 +1,28 @@
+{
+  "Employee": [
+    {
+      "id": 4,
+      "name": "Ritika",
+      "mob": "8784563",
+      "addr": "Indore"
+    },
+    {
+      "id": 5,
+      "name": "Jayesh",
+      "mob": "7564321",
+      "addr": "Bhopal"
+    },
+    {
+      "id": 6,
+      "name": "Rashi",
+      "mob": "876532",
+      "addr": "Indore"
+    },
+    {
+      "id": 8,
+      "name": "Anmol",
+      "mob": "8904546",
+      "addr": "Indore"
+    }
+  ]
+}
