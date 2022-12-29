@@ -1,0 +1,42 @@
+
+<div style="margin-left: 10px; margin-top: 15px;">
+    <h1>Contact Details</h1>
+    <p>Yash Technologies</p>
+    <p>Crystal IT Park</p>
+    <p>Indore M.P</p>
+    <p>+91-7828889875, +91-2323232323</p>
+    <button MatButton>Close</button>
+    </div>
+    <div style="margin-left: 10px;margin-top: 10px;">
+        <h1>CEO Message</h1>
+        <p>Hello Everyone</p>
+        <button MatButton (Click)="dclose()">Close</button>
+        </div>
+<!-- <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+<br>
+<mat-progress-bar mode="indeterminate"></mat-progress-bar>
+<br>
+
+<mat-progress-bar mode="buffer"></mat-progress-bar>
+<br>
+<mat-progress-bar mode="query"></mat-progress-bar> -->
+<h3>Hobbies</h3>
+<div>
+    <mat-chip-listbox aria-label="Hobby selection">
+        <mat-chip-option>Dance</mat-chip-option>
+        <mat-chip-option>Singing</mat-chip-option>
+        <mat-chip-option color="accent" selected>Reading</mat-chip-option>
+        <mat-chip-option color="warn">Writing</mat-chip-option>
+      </mat-chip-listbox>
+</div>
+<div>
+    <mat-list>
+        <mat-list-item>Dance</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Singing</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Reading</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Writing</mat-list-item>
+      </mat-list>
+</div>
