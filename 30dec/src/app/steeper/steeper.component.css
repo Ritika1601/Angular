@@ -1,0 +1,22 @@
+/* .step{
+  background-image: url(https://img.freepik.com/free-vector/realistic-galaxy-background_52683-12122.jpg?w=2000);
+  height: 550px;
+  background-size: cover;
+
+} */
+mat-form-field{
+  margin-left: 10px;
+}
+
+.form{
+  margin-top: 10px;
+  text-align: center;
+  padding: 30px;
+  width: 700px;
+  margin-left: 200px;
+  box-shadow: 15px,15px;
+  background-color: white;
+}
+button{
+  margin-left: 10px;
+}
